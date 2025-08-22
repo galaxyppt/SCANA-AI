@@ -1,0 +1,53 @@
+RETAIL SERVICE LEVEL AGREEMENT
+
+1. DELIVERY TIMING
+   The Supplier shall ensure all retail deliveries are made between 07:00-21:00 hours on all days.
+   Standard deliveries must be completed within 2 days of order placement.
+   Express deliveries must be completed within 24 hours of order placement.
+   Peak season (Nov-Dec) deliveries may have a 1-day extension with prior notification.
+
+2. ORDER PROCESSING
+   2.1 Order Confirmation
+   - Orders must be confirmed within 15 minutes of receipt
+   - Inventory availability must be verified before confirmation
+   - Any substitutions must be approved by the retailer
+   
+   2.2 Order Fulfillment
+   - Orders must be picked and packed within 2 hours of confirmation
+   - Order accuracy must be 99.5% or higher
+   - Barcode verification required for all items
+
+3. QUALITY STANDARDS
+   3.1 Product Quality
+   - All products must be in saleable condition
+   - Minimum 80% of shelf life remaining for perishable goods
+   - No visible damage to packaging allowed
+   
+   3.2 Stock Accuracy
+   - Inventory accuracy must be maintained at 98% or higher
+   - Real-time inventory updates required
+   - Discrepancies must be reported within 4 hours
+
+4. RETURN PROCESSING
+   4.1 Return Authorization
+   - Return requests must be processed within 24 hours
+   - Return labels must be provided electronically
+   - Return reason codes must be accurately captured
+   
+   4.2 Refund Processing
+   - Refunds must be processed within 48 hours of return receipt
+   - Condition assessment must be completed within 24 hours
+   - Detailed return reports provided weekly
+
+5. COMPLIANCE
+   5.1 Monitoring
+   - All deliveries will be monitored for compliance
+   - Weekly performance reports will be generated
+   - Monthly business reviews will be conducted
+   
+   5.2 Penalties
+   - Late deliveries: 5% penalty per day beyond agreed time
+   - Order accuracy below 99.5%: 2% penalty on invoice value
+   - Stock accuracy below 98%: 3% penalty on monthly invoice
+   - Late return processing: $10 per day per return
+   - Repeated violations may lead to contract termination

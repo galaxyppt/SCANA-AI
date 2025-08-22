@@ -1,0 +1,140 @@
+SERVICE LEVEL AGREEMENT - FOOD SERVICES DELIVERY
+
+1. AGREEMENT OVERVIEW
+This Service Level Agreement (SLA) is made between [Vendor Name] ("Service Provider") and [Client Name] ("Client") for food delivery services.
+
+2. FOOD SAFETY STANDARDS
+
+2.1 Temperature Control
+- Hot Food: >63°C
+- Cold Food: <5°C
+- Frozen Items: -18°C or below
+- Maximum Temperature Deviation: ±2°C
+
+2.2 Time-Temperature Controls
+- Maximum Transit Time: 45 minutes
+- Temperature Check: Every 15 minutes
+- Temperature Recovery: <10 minutes
+- Hot Hold Duration: <2 hours
+
+2.3 Hygiene Standards
+- Minimum Hygiene Score: 95/100
+- FSSAI Compliance: Mandatory
+- Daily Sanitation Check
+- Monthly Audit
+
+3. DELIVERY PARAMETERS
+
+3.1 Time Standards
+- Standard Delivery: 30 minutes
+- Peak Hour Buffer: +15 minutes
+- Maximum Delay: 15 minutes
+- Order Preparation Time: Excluded
+
+3.2 Quality Metrics
+- Food Temperature Compliance: 100%
+- Packaging Integrity: 100%
+- Presentation Quality: ≥90%
+- Order Accuracy: ≥98%
+
+4. OPERATIONAL REQUIREMENTS
+
+4.1 Equipment Standards
+- Insulated Delivery Boxes
+- Temperature Monitoring Devices
+- Hygiene Equipment
+- Sanitization Supplies
+
+4.2 Vehicle Requirements
+- Temperature-Controlled Units
+- Regular Sanitization
+- GPS Tracking
+- Maintenance Schedule
+
+5. STAFF REQUIREMENTS
+
+5.1 Certifications
+- Food Handler's Certificate
+- Food Safety Training
+- First Aid Training
+- Vehicle Operation License
+
+5.2 Health & Hygiene
+- Daily Health Check
+- Personal Hygiene Compliance
+- Clean Uniform Policy
+- Regular Medical Examination
+
+6. MONITORING AND REPORTING
+
+6.1 Regular Reports
+- Temperature Logs
+- Delivery Time Reports
+- Quality Assessment Reports
+- Customer Feedback Analysis
+
+6.2 Compliance Documentation
+- FSSAI Certificates
+- Health Inspection Reports
+- Vehicle Inspection Records
+- Staff Training Records
+
+7. PENALTIES AND REMEDIATION
+
+7.1 Temperature Violations
+- First Instance: Warning
+- Second Instance: 10% penalty
+- Third Instance: 25% penalty
+- Repeated Violations: Contract Review
+
+7.2 Delivery Delays
+- 15-30 minutes: 10% discount
+- 30-45 minutes: 25% discount
+- >45 minutes: Full refund
+- Order Cancellation Option
+
+8. FOOD SAFETY INCIDENTS
+
+8.1 Immediate Actions
+- Food Quality Check
+- Temperature Assessment
+- Customer Communication
+- Incident Documentation
+
+8.2 Resolution Process
+- Root Cause Analysis
+- Corrective Actions
+- Preventive Measures
+- Client Reporting
+
+9. EMERGENCY PROCEDURES
+
+9.1 Equipment Failure
+- Backup Equipment Usage
+- Alternative Delivery Method
+- Client Notification
+- Quality Assurance Check
+
+9.2 Food Safety Issues
+- Immediate Product Recall
+- Health Authority Notification
+- Customer Communication
+- Compensation Process
+
+10. FORCE MAJEURE
+Standard force majeure conditions apply for:
+- Natural Disasters
+- Civil Unrest
+- Government Actions
+- Pandemic Situations
+
+11. AGREEMENT VALIDITY
+This SLA is valid for one year from the date of signing and may be renewed with mutual consent.
+
+12. SIGNATURES
+
+Service Provider: _________________    Client: _________________
+Date: __________________________    Date: __________________
+
+FSSAI Compliance Officer: _________________
+Date: __________________________ 

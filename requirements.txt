@@ -1,0 +1,33 @@
+# API and Web Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.33.0
+python-multipart>=0.0.6
+
+# Data Processing and Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Dashboard and Visualization
+streamlit>=1.31.0
+plotly>=5.18.0
+
+# AI and NLP
+openai>=1.84.0
+
+# Email and Notifications
+python-dotenv>=1.0.0
+requests>=2.31.0
+aiosmtplib>=2.0.0
+
+# Testing and Development
+pytest>=7.0.0
+black>=24.0.0
+flake8>=5.0.4
+
+# Optional PDF Processing
+pdfplumber>=0.10.3
+
+# Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4 

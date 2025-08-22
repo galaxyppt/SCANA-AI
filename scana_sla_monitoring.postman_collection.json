@@ -1,0 +1,187 @@
+{
+    "info": {
+        "name": "SCANA SLA Monitoring",
+        "description": "API collection for SCANA AI delivery monitoring and SLA tracking",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get API Status",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8088/",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8088",
+                    "path": ["/"]
+                }
+            }
+        },
+        {
+            "name": "Get Latest Delivery",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "",
+                            "pm.test(\"Response structure is valid\", function () {",
+                            "    const response = pm.response.json();",
+                            "    pm.expect(response.status).to.eql(\"success\");",
+                            "    pm.expect(response.data).to.be.an('object');",
+                            "    pm.expect(response.data).to.have.property('vendor_name');",
+                            "    pm.expect(response.data).to.have.property('delivery_date');",
+                            "    pm.expect(response.data).to.have.property('delivery_time');",
+                            "    pm.expect(response.data).to.have.property('delivery_temperature');",
+                            "    pm.expect(response.data).to.have.property('product_quality_score');",
+                            "});",
+                            "",
+                            "pm.test(\"Temperature is within safe range\", function () {",
+                            "    const response = pm.response.json();",
+                            "    pm.expect(response.data.delivery_temperature).to.be.within(2.0, 8.0);",
+                            "});"
+                        ]
+                    }
+                }
+            ],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8088/deliveries",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8088",
+                    "path": ["deliveries"]
+                }
+            }
+        },
+        {
+            "name": "Get Delivery Batch",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "",
+                            "pm.test(\"Response structure is valid\", function () {",
+                            "    const response = pm.response.json();",
+                            "    pm.expect(response.status).to.eql(\"success\");",
+                            "    pm.expect(response.data).to.be.an('array');",
+                            "    response.data.forEach(delivery => {",
+                            "        pm.expect(delivery).to.have.property('vendor_name');",
+                            "        pm.expect(delivery).to.have.property('delivery_date');",
+                            "        pm.expect(delivery).to.have.property('delivery_time');",
+                            "        pm.expect(delivery).to.have.property('delivery_temperature');",
+                            "        pm.expect(delivery).to.have.property('product_quality_score');",
+                            "    });",
+                            "});",
+                            "",
+                            "pm.test(\"All temperatures are within safe range\", function () {",
+                            "    const response = pm.response.json();",
+                            "    response.data.forEach(delivery => {",
+                            "        pm.expect(delivery.delivery_temperature).to.be.within(2.0, 8.0);",
+                            "    });",
+                            "});"
+                        ]
+                    }
+                }
+            ],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8088/deliveries/batch?count=10",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8088",
+                    "path": ["deliveries", "batch"],
+                    "query": [
+                        {
+                            "key": "count",
+                            "value": "10"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Delivery Record",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "type": "text/javascript",
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {",
+                            "    pm.response.to.have.status(200);",
+                            "});",
+                            "",
+                            "pm.test(\"Response structure is valid\", function () {",
+                            "    const response = pm.response.json();",
+                            "    pm.expect(response.status).to.eql(\"success\");",
+                            "    pm.expect(response.data).to.be.an('object');",
+                            "    pm.expect(response.data).to.have.property('vendor_name');",
+                            "    pm.expect(response.data).to.have.property('delivery_date');",
+                            "    pm.expect(response.data).to.have.property('delivery_time');",
+                            "    pm.expect(response.data).to.have.property('delivery_temperature');",
+                            "    pm.expect(response.data).to.have.property('product_quality_score');",
+                            "});"
+                        ]
+                    }
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"vendor_name\": \"Fresh Foods Inc.\",\n    \"delivery_date\": \"{{$isoDate}}\",\n    \"delivery_time\": \"{{$randomInt 0 23}}:{{$randomInt 10 59}}\",\n    \"delivery_temperature\": {{$randomFloat 2 8}},\n    \"product_quality_score\": {{$randomInt 85 100}},\n    \"industry\": \"Food\",\n    \"product_type\": \"refrigerated\"\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8088/deliveries",
+                    "protocol": "http",
+                    "host": ["127", "0", "0", "1"],
+                    "port": "8088",
+                    "path": ["deliveries"]
+                }
+            }
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    "// Global variables",
+                    "pm.globals.set(\"api_port\", \"8088\");",
+                    "",
+                    "// Helper functions for date/time",
+                    "function padZero(num) {",
+                    "    return num < 10 ? '0' + num : num;",
+                    "}",
+                    "",
+                    "// Set current date in ISO format",
+                    "const now = new Date();",
+                    "pm.globals.set(\"isoDate\", now.toISOString().split('T')[0]);"
+                ]
+            }
+        }
+    ]
+} 

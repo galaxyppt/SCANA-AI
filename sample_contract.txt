@@ -1,0 +1,38 @@
+DELIVERY SERVICE LEVEL AGREEMENT
+
+1. DELIVERY TIMING
+   The Supplier shall ensure all deliveries are made between 08:00-17:00 hours on business days.
+   Emergency deliveries must be completed within 4 hours of order placement.
+
+2. TEMPERATURE REQUIREMENTS
+   2.1 Cold Chain Products
+   - Temperature must be maintained between 2°C to 8°C during transport
+   - Temperature deviation tolerance: ±1°C for no more than 30 minutes
+   
+   2.2 Frozen Products
+   - Must be kept below -18°C throughout transport
+   - No temporary temperature excursions allowed
+
+3. QUALITY STANDARDS
+   3.1 Product Quality
+   - Minimum quality score of 85 points required for acceptance
+   - Products scoring between 80-85 will be flagged for review
+   - Products scoring below 80 will be rejected
+
+4. DOCUMENTATION
+   4.1 Temperature Logs
+   - Continuous temperature monitoring required
+   - Logs must be provided upon delivery
+   
+   4.2 Quality Assessment
+   - Quality inspection must be performed at pickup and delivery
+   - Assessment forms must be completed and signed
+
+5. COMPLIANCE
+   5.1 Monitoring
+   - All deliveries will be monitored for compliance
+   - Monthly performance reports will be generated
+   
+   5.2 Penalties
+   - Non-compliance may result in financial penalties
+   - Repeated violations may lead to contract termination 
